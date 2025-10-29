@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'))
   const [loading, setLoading] = useState(true)
 
-  const API_BASE_URL = 'https://haraj-api-e98o.onrender.com'
+  const API_BASE_URL = 'https://haraj-api-e98o.onrender.com/api'
 
   useEffect(() => {
     if (token) {
